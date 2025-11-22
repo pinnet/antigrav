@@ -1,0 +1,71 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  z-index: 10;
+  pointer-events: none;
+  user-select: none;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0 0 0.2em 0;
+  background: linear-gradient(to right, #ffffff, #a5a5a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+p {
+  font-size: 1.1em;
+  color: #888;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Customizing lil-gui if needed, though it usually sits on top nicely */
+.lil-gui { 
+  --background-color: #2a2a2a;
+  --text-color: #eee;
+  --title-background-color: #3a3a3a;
+  --widget-color: #444;
+  --hover-color: #555;
+  --focus-color: #666;
+  --number-color: #2cc9ff;
+  --string-color: #a2ff00;
+}
